@@ -1,6 +1,3 @@
-Here's a markdown file you can use for documenting the `Products` component and the `Popup` integration. You can include this in your GitHub repository to explain the implementation and usage of these components.
-
-````markdown
 # E-commerce Application
 
 ## Overview
@@ -136,7 +133,6 @@ const Products = () => {
 
 export default Products;
 ```
-````
 
 ### 2. `Popup` Component
 
@@ -201,11 +197,6 @@ export default Popup;
 
 The application should now be running at `http://localhost:3000`, with the `Products` component displaying products and the `Popup` component showing notifications.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
 
-You can save this markdown content into a file named `README.md` or similar and add it to your GitHub repository. This file provides an overview of the `Products` and `Popup` components, how they work, and how to set up the project.
-```
