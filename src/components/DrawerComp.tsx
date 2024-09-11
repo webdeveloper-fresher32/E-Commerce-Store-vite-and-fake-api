@@ -6,10 +6,25 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
-const PAGES = ["Products", "Cart", "Categories", "About", "Logout"];
+const PAGES = [
+  {
+    label: "Products",
+    path: "/",
+  },
+  {
+    label: "About",
+    path: "/about",
+  },
+  {
+    label: "Cart",
+    path: "/cart",
+  },
+];
 function DrawerComp() {
   const [open, setOpen] = React.useState(false);
   return (
@@ -17,9 +32,13 @@ function DrawerComp() {
       <Drawer open={open} onClose={() => setOpen(false)}>
         <List>
           {PAGES.map((page, index) => (
-            <ListItemButton key={index}>
+            <ListItemButton key={index} onClick={() => setOpen(false)}>
               <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
+                <ListItemText>
+                  <Link to={page.path} style={{ textDecoration: "none" }}>
+                    <Typography>{page.label}</Typography>
+                  </Link>
+                </ListItemText>
               </ListItemIcon>
             </ListItemButton>
           ))}
