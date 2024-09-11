@@ -111,7 +111,7 @@ export default function Navbar() {
                 textColor="inherit"
                 value={activeTab}
                 indicatorColor="secondary"
-                onChange={(event, newValue) => setActiveTab(newValue)}
+                onChange={(_event,newValue) => setActiveTab(newValue)}
               >
                 {PAGES.map((page, index) => (
                   <Tab
