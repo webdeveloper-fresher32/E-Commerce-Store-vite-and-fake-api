@@ -196,7 +196,3 @@ export default Popup;
    ```
 
 The application should now be running at `http://localhost:3000`, with the `Products` component displaying products and the `Popup` component showing notifications.
-
-
-```
-
